@@ -7,12 +7,12 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; /* This helps in making it responsive */
+    flex-wrap: wrap;
 }
 
 .footer-section {
     flex: 1;
-    min-width: 200px; /* Ensures sections don't get too small */
+    min-width: 200px;
     margin: 10px;
 }
 
