@@ -1,70 +1,35 @@
-.footer {
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    padding: 40px 20px;
-    background-color: #1a1a1a;
-    color: #ffffff;
+    flex-wrap: wrap; /* This helps in making it responsive */
 }
 
 .footer-section {
     flex: 1;
-    min-width: 200px;
-    margin: 20px;
+    min-width: 200px; /* Ensures sections don't get too small */
+    margin: 10px;
 }
 
-.footer-section h3 {
-    color: #ffffff;
-    margin-bottom: 20px;
-    font-size: 1.2rem;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin-bottom: 10px;
-}
-
-.footer-section ul li a {
-    color: #cccccc;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-section ul li a:hover {
-    color: #ffffff;
-}
-
-.social .media-icons {
+.social-media {
     display: flex;
-    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.media-icons a {
-    color: #ffffff;
-    font-size: 24px;
-    transition: transform 0.3s ease;
+.media-icons {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
 }
-
-.media-icons a:hover {
-    transform: translateY(-3px);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-section {
-        margin: 10px 0;
-    }
-
-    .social .media-icons {
-        justify-content: center;
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column; /* Stack sections on smaller screens */
+        align-items: center;
     }
 }
