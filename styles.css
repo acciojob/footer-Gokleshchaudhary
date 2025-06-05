@@ -1,95 +1,104 @@
-.footer {
-  background: #222;
-  color: #eee;
-  padding: 40px 0 0 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
-}
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
-}
-.footer-section {
-  flex: 1 1 180px;
-  margin: 0 15px 30px 15px;
-  min-width: 180px;
-}
-.footer-section h3 {
-  color: #fff;
-  margin-bottom: 18px;
-  font-size: 1.2em;
-  letter-spacing: 1px;
-}
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.footer-section ul li {
-  margin-bottom: 10px;
-}
-.footer-section ul li a {
-  color: #eee;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-.footer-section ul li a:hover {
-  color: #00bcd4;
-}
-.footer-social {
-  margin-top: 15px;
-}
-.media-icons {
-  display: inline-block;
-  color: #eee;
-  background: #333;
-  width: 36px;
-  height: 36px;
-  line-height: 36px;
-  text-align: center;
-  border-radius: 50%;
-  margin-right: 8px;
-  font-size: 1.2em;
-  transition: background 0.2s, color 0.2s;
-}
-.media-icons:hover {
-  background: #00bcd4;
-  color: #222;
-}
-.footer-bottom {
-  text-align: center;
-  padding: 18px 10px 10px 10px;
-  background: #181818;
-  color: #aaa;
-  font-size: 0.95em;
-  margin-top: 10px;
+/* Basic Reset and Body Styling (Optional, but good practice) */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    padding-bottom: 200px; /* Add padding to see the footer clearly */
 }
 
-/* Responsive Design */
-@media (max-width: 900px) {
-  .footer-container {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-  .footer-section {
-    flex: 1 1 220px;
-    margin-bottom: 25px;
-  }
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    margin-top: 40px; /* Add some space above the footer */
 }
-@media (max-width: 600px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 10px;
-  }
-  .footer-section {
-    width: 100%;
-    margin: 0 0 18px 0;
-  }
-  .footer-bottom {
-    font-size: 0.9em;
-  }
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
+    justify-content: space-around; /* Distribute space around sections */
+    max-width: 1200px; /* Optional: Limit footer width */
+    margin: 0 auto; /* Center the footer container */
+}
+
+.footer-section {
+    margin: 20px;
+    min-width: 150px; /* Minimum width for sections before wrapping */
+    flex: 1; /* Allow sections to grow */
+}
+
+.footer-section h2 {
+    color: #00bcd4; /* Highlight color for headings */
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.contact-section p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Space between icons */
+}
+
+.media-icons {
+    display: inline-block; /* Or flex/grid if using containers for icons */
+    width: 30px; /* Placeholder size */
+    height: 30px; /* Placeholder size */
+    background-color: #555; /* Placeholder background */
+    color: #fff; /* Placeholder text color */
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px; /* Optional: rounded corners */
+    text-decoration: none;
+    font-size: 0.8em; /* Placeholder text size */
+}
+
+.media-icons:hover {
+    background-color: #00bcd4; /* Placeholder hover effect */
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+        align-items: center; /* Center sections */
+    }
+
+    .footer-section {
+        margin: 20px 0;
+        text-align: center; /* Center text in sections */
+        width: 100%; /* Sections take full width */
+        min-width: auto; /* Remove min-width constraint */
+    }
+
+    .footer-section ul {
+        padding: 0;
+    }
+
+    .social-icons {
+        justify-content: center; /* Center social icons */
+    }
 }
