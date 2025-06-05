@@ -124,7 +124,7 @@ footer {
     color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .footer-columns {
         grid-template-columns: repeat(2, 1fr);
     }
