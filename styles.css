@@ -34,7 +34,7 @@ footer {
     display: flex;
     gap: 15px;
     margin-bottom: 40px;
-	justify-content:end;
+    justify-content: end; /* Aligns social icons to the right */
 }
 
 .social-icons a {
@@ -108,7 +108,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 20px 50px;
 }
 
 .footer-bottom p {
@@ -124,9 +124,9 @@ footer {
     color: #fff;
 }
 
-@media (max-width: 480px) {
-    .footer-bottom {
-        padding: 10px 20px;
+@media (max-width: 768px) {
+    .footer-columns {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
