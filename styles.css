@@ -14,7 +14,7 @@ body {
 footer {
     background-color: #000;
     color: #fff;
-    padding: 50px 0 0 0;
+    padding: 50px 0;
     margin-top: auto;
 }
 
@@ -39,8 +39,6 @@ footer {
 .social-icons {
     display: flex;
     gap: 15px;
-    margin-bottom: 40px;
-    justify-content: end; /* Aligns social icons to the right */
 }
 
 .social-icons a {
@@ -130,7 +128,7 @@ footer {
     color: #fff;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .footer-columns {
         grid-template-columns: repeat(2, 1fr);
     }
