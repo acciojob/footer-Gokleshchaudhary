@@ -108,7 +108,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 10px;
 }
 
 .footer-bottom p {
@@ -124,9 +124,9 @@ footer {
     color: #fff;
 }
 
-@media (max-width: 768px) {
-    .footer-columns {
-        grid-template-columns: repeat(2, 1fr);
+@media (max-width: 480px) {
+    .footer-bottom {
+        padding: 10px 20px;
     }
 }
 
