@@ -1,146 +1,95 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+.footer {
+  background: #222;
+  color: #eee;
+  padding: 40px 0 0 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
-
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
 }
-
-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 50px 0;
-    margin-top: auto;
-}
-
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.logo {
-    font-size: 2em;
-    font-weight: 300;
-    margin-bottom: 20px;
-}
-
 .footer-section {
-    display: flex; /* Use Flexbox */
-    justify-content: space-between; /* Space between logo and icons */
-    align-items: center; /* Center align items vertically */
+  flex: 1 1 180px;
+  margin: 0 15px 30px 15px;
+  min-width: 180px;
 }
-
-.social-icons {
-    display: flex;
-    gap: 15px;
+.footer-section h3 {
+  color: #fff;
+  margin-bottom: 18px;
+  font-size: 1.2em;
+  letter-spacing: 1px;
 }
-
-.social-icons a {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-decoration: none;
-    transition: transform 0.3s;
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-
-.social-icons a:hover {
-    transform: translateY(-5px);
+.footer-section ul li {
+  margin-bottom: 10px;
 }
-
-.facebook { background-color: #3b5998; }
-.twitter { background-color: #1da1f2; }
-.instagram { background-color: #e1306c; }
-.linkedin { background-color: #0077b5; }
-.youtube { background-color: #ff0000; }
-
-.footer-columns {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+.footer-section ul li a {
+  color: #eee;
+  text-decoration: none;
+  transition: color 0.2s;
 }
-
-.footer-column h3 {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    position: relative;
-    padding-bottom: 10px;
+.footer-section ul li a:hover {
+  color: #00bcd4;
 }
-
-.footer-column h3::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 40px;
-    height: 2px;
-    background-color: #fff;
+.footer-social {
+  margin-top: 15px;
 }
-
-.footer-column ul {
-    list-style: none;
+.media-icons {
+  display: inline-block;
+  color: #eee;
+  background: #333;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 8px;
+  font-size: 1.2em;
+  transition: background 0.2s, color 0.2s;
 }
-
-.footer-column ul li {
-    margin-bottom: 10px;
+.media-icons:hover {
+  background: #00bcd4;
+  color: #222;
 }
-
-.footer-column ul li a {
-    color: #999;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-column ul li a:hover {
-    color: #fff;
-}
-
 .footer-bottom {
-    background-color: #1a1a1a;
-    padding: 20px;
-    margin-top: 50px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
+  text-align: center;
+  padding: 18px 10px 10px 10px;
+  background: #181818;
+  color: #aaa;
+  font-size: 0.95em;
+  margin-top: 10px;
 }
 
-.footer-bottom p {
-    color: #666;
+/* Responsive Design */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .footer-section {
+    flex: 1 1 220px;
+    margin-bottom: 25px;
+  }
 }
-
-.footer-bottom a {
-    color: #666;
-    text-decoration: none;
-}
-
-.footer-bottom a:hover {
-    color: #fff;
-}
-
-@media (max-width: 480px) {
-    .footer-columns {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .footer-columns {
-        grid-template-columns: 1fr;
-    }
-    
-    .footer-bottom {
-        flex-direction: column;
-        gap: 10px;
-    }
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 10px;
+  }
+  .footer-section {
+    width: 100%;
+    margin: 0 0 18px 0;
+  }
+  .footer-bottom {
+    font-size: 0.9em;
+  }
 }
