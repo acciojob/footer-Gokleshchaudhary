@@ -30,11 +30,16 @@ footer {
     margin-bottom: 20px;
 }
 
+.footer-section {
+    display: flex; /* Use Flexbox */
+    justify-content: space-between; /* Space between logo and icons */
+    align-items: center; /* Center align items vertically */
+}
+
 .social-icons {
     display: flex;
     gap: 15px;
-    margin-bottom: 40px;
-    justify-content: end; /* Aligns social icons to the right */
+   
 }
 
 .social-icons a {
@@ -124,7 +129,7 @@ footer {
     color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .footer-columns {
         grid-template-columns: repeat(2, 1fr);
     }
