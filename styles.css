@@ -39,7 +39,8 @@ footer {
 .social-icons {
     display: flex;
     gap: 15px;
-   
+    margin-bottom: 40px;
+    justify-content: end; /* Aligns social icons to the right */
 }
 
 .social-icons a {
